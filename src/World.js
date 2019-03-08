@@ -1,7 +1,7 @@
 import React from 'react';
 import './World.css';
 
-const CELL_SIZE = 20;
+const CELL_SIZE = 28;
 
 const CONFIG = `
 ......+.......
@@ -23,7 +23,7 @@ const CONFIG = `
 ..............
 `;
 
-const CELL_COLOR = {
+export const CELL_COLOR = {
   '.': 'Black',
   '#': 'Sienna',
   '~': 'DodgerBlue',
@@ -48,7 +48,7 @@ class Cell extends React.Component {
   }
 }
 
-class World extends React.Component {
+export class World extends React.Component {
 
   state = {
     grid: CONFIG.split('\n').filter(row => row.length > 0).map(row => row.split('')),
@@ -200,5 +200,3 @@ class World extends React.Component {
     );
   }
 }
-
-export default World;

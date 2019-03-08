@@ -1,7 +1,11 @@
-#root {
-    display: table;
+h1 {
+    text-align: center;
+}
+
+p {
+    margin-left:  auto;
     margin-right: auto;
-    margin-left: auto;
+    width: 60%;
 }
 
 .Grid {
@@ -19,9 +23,11 @@
 
 .controls {
     margin-top: 20px;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .button {
     margin-left: 12px;
-    cursor: pointer;
 }
